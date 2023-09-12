@@ -1,0 +1,229 @@
+/* common code starts  */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+  /* google fonts :
+
+font-family: 'Cormorant Upright', serif;
+font-family: 'Mukta', sans-serif; 
+*/
+
+/* common code ends */
+
+/* navvar design starts  */
+   nav{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+   background-image: background: #9CECFB;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+
+   }
+
+   nav ul li {
+    display: inline-block;
+    margin: 40px 0px;
+    position: relative;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 0 15px;
+   }
+ 
+ nav ul li a{
+    color: white;
+    transition: 0.7s;
+    position: relative;
+  
+ }
+
+ nav ul li a:hover{
+    color: orangered;
+
+ }
+
+ nav ul li  a::before{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background-color: orange;
+   position: absolute;
+     bottom: 23px;
+     transition: .8s;
+ }
+
+ nav ul li:hover > a::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+    position: absolute;
+      bottom: 23px;
+   
+ }
+
+
+/* navbar design ends  */
+
+/* sub-menu design starts  */
+nav ul li .sub-menu{
+    position: absolute;
+  top: 80px;
+   width: 200px;
+   border: 2px solid #ddd;
+   text-align: left;
+   background-color: #fff;
+   opacity: 0;
+   visibility: hidden;
+   transition: .9s;
+ margin-left: -300px;
+}
+
+nav ul li .sub-menu li {
+    display: block;
+  border-bottom: 1px solid #ddd;
+ }
+
+ nav ul li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    margin-left: -7px;
+ }
+
+ nav ul li .sub-menu li a{
+   color: black;
+   font-size: 14px;
+font-family: 'Cormorant Upright', serif;
+transition: 0.4s;
+ letter-spacing: 3px;
+ font-weight: bolder;
+ }
+
+ nav ul li .sub-menu li a:hover{
+   color: red;
+
+}
+
+nav ul li .sub-menu li:hover a::before{
+    content: '';
+    width: 0;
+}
+/* sub-menu design ends  */
+
+/* sub-menu-2 design starts   */
+
+nav ul li .sub-menu .sub-menu-2{
+  position: absolute;
+top: 200px;
+ width: 200px;
+ margin-left: 200px; 
+ border: 2px solid #ddd;
+ text-align: left;
+ background-color:  rgba(0, 0, 128, 0.103);
+ border-radius: 15px;
+ opacity: 0;
+ visibility: hidden;
+ transition: .9s;
+
+}
+
+nav ul li .sub-menu li .sub-menu-2 li {
+  display: block;
+border-bottom: 1px solid #fff;
+
+}
+
+nav ul li .sub-menu li:hover .sub-menu-2{
+  opacity: 1;
+  visibility: visible;
+  top: 7px;
+}
+
+nav ul li .sub-menu .sub-menu-2 li a{
+ color: black;
+ font-size: 14px;
+font-family: 'Cormorant Upright', serif;
+transition: 0.4s;
+letter-spacing: 3px;
+font-weight: bolder;
+}
+
+nav ul li .sub-menu .sub-menu-2 li a:hover{
+ color: #fff;
+
+}
+
+/* nav ul li .sub-menu li:hover a::before{
+  content: '';
+  width: 0;
+} */
+
+
+/* sub-menu-2 design ends  */
+
+
+/* sub-menu-3 starts  */
+
+
+nav ul li .sub-menu .sub-menu-2 .sub-menu-3{
+  position: absolute;
+top: -390px;
+ width: 200px;
+ margin-left: 195px; 
+ border: 2px solid #ddd;
+ text-align: left;
+ background-color: rgba(250, 128, 114, 0.637);
+ opacity: 0;
+ visibility: hidden;
+ transition: .9s;
+ border-radius: 15px;
+
+}
+
+nav ul li .sub-menu-2 li:hover .sub-menu-3{
+  opacity: 1;
+  visibility: visible;
+  top: 20px;
+}
+
+nav ul li .sub-menu li .sub-menu-2 li .sub-menu-3 li {
+  display: block;
+border-bottom: 1px solid #fff;
+
+}
+
+nav ul li .sub-menu .sub-menu-2 .sub-menu-3 li a{
+ color: black;
+ font-size: 14px;
+font-family: 'Cormorant Upright', serif;
+transition: 0.4s;
+letter-spacing: 3px;
+font-weight: bolder;
+}
+
+nav ul li .sub-menu .sub-menu-2 .sub-menu-3 li a:hover{
+ color: red;
+
+}
+
+/* nav ul li .sub-menu li:hover a::before{
+  content: '';
+  width: 0;
+} */
+
+/* sub-menu-3 ends  */
